@@ -1,0 +1,1 @@
+python solve_sokoban.py -config_file config.yaml

@@ -1,0 +1,16 @@
+
+gym
+tqdm
+yacs
+gdown
+torch
+numpy
+pygame
+piglet
+IPython
+imageio
+matplotlib
+gym_sokoban
+yacs>=0.1.8
+imageio[ffmpeg]==2.9.0
+
