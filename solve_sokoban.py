@@ -1,6 +1,4 @@
 
-import sys
-import random
 import argparse
 from configs import cfg
 from sokoban.soko_pap import *
@@ -38,7 +36,7 @@ def SetEnv(sokoban_cfg, max_steps):
     return env
 
 
-def SetAlgorithm(algo_cfg, env, plot_graphs=False):
+def SetAlgorithmWithTraining(algo_cfg, env, plot_graphs=False):
     algo = DQN(env, algo_cfg.EPSILON_GREEDY, algo_cfg.DECAY, algo_cfg.DISCOUNT_FACTOR,
                algo_cfg.CHANGE_REWARD)
     losses, rewards = algo.train(algo_cfg.NUM_EPISODES)
@@ -47,16 +45,27 @@ def SetAlgorithm(algo_cfg, env, plot_graphs=False):
     return algo
 
 
+def SetAlgorithm(algo_cfg, sokoban_cfg, env):
+    algo = DQN(env, algo_cfg.EPSILON_GREEDY, algo_cfg.DECAY, algo_cfg.DISCOUNT_FACTOR,
+               algo_cfg.CHANGE_REWARD)
+    if 1 == sokoban_cfg.NUM_BOXES:
+        algo.policy.load_state_dict(torch.load('path_to_your_model.pth'))
+    else:
+        algo.policy.load_state_dict(torch.load('path_to_your_model.pth'))
+    algo.policy.eval()
+    return algo
+
+
 def play_video(algo):
-    scenraio = 'Fix' if cfg.SOKOBAN.FIX else 'Random'
-    name = f'Sokoban_{cfg.SOKOBAN.DIM}x{cfg.SOKOBAN.DIM}_{scenraio}'
+    name = f'Sokoban_{cfg.SOKOBAN.DIM}x{cfg.SOKOBAN.DIM}_{cfg.SOKOBAN.NUM_BOXES}_boxes'
     DisplayVideo(algo.test(name))
 
 
 def main():
     args = parse_args()
     env = SetEnv(cfg.SOKOBAN, cfg.ALGORITHM.NUM_STEPS)
-    algo = SetAlgorithm(cfg.ALGORITHM, env)
+    algo = SetAlgorithm(cfg.ALGORITHM, cfg.SOKOBAN, env)
+    # algo = SetAlgorithmWithTraining(cfg.ALGORITHM, env) # run with training
     play_video(algo)
 
 
