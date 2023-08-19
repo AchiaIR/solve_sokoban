@@ -36,22 +36,13 @@ def SetEnv(sokoban_cfg, max_steps):
     return env
 
 
-def SetAlgorithmWithTraining(algo_cfg, env, plot_graphs=False):
-    algo = DQN(env, algo_cfg.EPSILON_GREEDY, algo_cfg.DECAY, algo_cfg.DISCOUNT_FACTOR,
-               algo_cfg.CHANGE_REWARD)
-    losses, rewards = algo.train(algo_cfg.NUM_EPISODES)
-    if plot_graphs:
-        PlotGraphs(losses, rewards)
-    return algo
-
-
 def SetAlgorithm(algo_cfg, sokoban_cfg, env):
     algo = DQN(env, algo_cfg.EPSILON_GREEDY, algo_cfg.DECAY, algo_cfg.DISCOUNT_FACTOR,
                algo_cfg.CHANGE_REWARD)
     if 1 == sokoban_cfg.NUM_BOXES:
-        algo.policy.load_state_dict(torch.load('path_to_your_model.pth'))
+        algo.policy.load_state_dict(torch.load('model1.pth', map_location=torch.device('cpu')))
     else:
-        algo.policy.load_state_dict(torch.load('path_to_your_model.pth'))
+        algo.policy.load_state_dict(torch.load('path_to_your_model.pth', map_location=torch.device('cpu')))
     algo.policy.eval()
     return algo
 
