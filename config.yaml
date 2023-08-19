@@ -1,16 +1,16 @@
 
 ALGORITHM:
   NAME: 'DeepQLearning'
-  NUM_EPISODES: 1 # Both
-  NUM_STEPS: 100 # ModelFree
-  DISCOUNT_FACTOR: 0.9 # Both
-  EPSILON_GREEDY: 0.99 # ModelFree
-  DECAY: 0.99 # ModelFree
+  NUM_EPISODES: 1 
+  NUM_STEPS: 100 
+  DISCOUNT_FACTOR: 0.9 
+  EPSILON_GREEDY: 0.99
+  DECAY: 0.99 
   CHANGE_REWARD: False
 
 
 SOKOBAN:
   DIM: 7
-  NUM_BOXES: 1
+  NUM_BOXES: 1 # 1 / 2
   FIX: True
 
