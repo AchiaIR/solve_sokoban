@@ -21,4 +21,4 @@ defaultCFG.ALGORITHM.CHANGE_REWARD = False
 defaultCFG.SOKOBAN = CN()
 defaultCFG.SOKOBAN.DIM = 7
 defaultCFG.SOKOBAN.NUM_BOXES = 1
-defaultCFG.SOKOBAN.FIX = False
+defaultCFG.SOKOBAN.FIX = True

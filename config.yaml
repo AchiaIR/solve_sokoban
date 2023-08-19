@@ -12,5 +12,5 @@ ALGORITHM:
 SOKOBAN:
   DIM: 7
   NUM_BOXES: 1
-  FIX: False
+  FIX: True
 
