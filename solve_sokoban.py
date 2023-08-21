@@ -29,8 +29,11 @@ def parse_args():
 
 
 def SetEnv(sokoban_cfg, max_steps):
-    if sokoban_cfg.FIX:
-        random.seed(2)
+    if sokoban_cfg.FIX 
+        if 1 == sokoban_cfg.NUM_BOXES:
+            random.seed(2)
+        else:
+            random.seed(6)
     env = PushAndPullSokobanEnv(dim_room=(sokoban_cfg.DIM, sokoban_cfg.DIM),
                                 num_boxes=sokoban_cfg.NUM_BOXES, max_steps=max_steps)
     return env
