@@ -29,7 +29,7 @@ def parse_args():
 
 
 def SetEnv(sokoban_cfg, max_steps):
-    if sokoban_cfg.FIX 
+    if sokoban_cfg.FIX: 
         if 1 == sokoban_cfg.NUM_BOXES:
             random.seed(2)
         else:
