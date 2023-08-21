@@ -45,7 +45,7 @@ def SetAlgorithm(algo_cfg, sokoban_cfg, env):
     if 1 == sokoban_cfg.NUM_BOXES:
         algo.policy.load_state_dict(torch.load('model1.pth', map_location=torch.device('cpu')))
     else:
-        algo.policy.load_state_dict(torch.load('path_to_your_model.pth', map_location=torch.device('cpu')))
+        algo.policy.load_state_dict(torch.load('model3.pth', map_location=torch.device('cpu')))
     algo.policy.eval()
     return algo
 
