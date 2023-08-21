@@ -26,7 +26,7 @@
 <a name="about-the-project"></a>
 <h2> $\color{red}{ About \ The \ Project }$ </h2>
 
-This projectt is a showcase of how the Sokoban game, a difficult
+This project is a showcase of how the Sokoban game, a difficult
 transportation puzzle where boxes are moved to storage locations, can be solved
 using Reinforcement Learning approach. 
 Here we use Deep Q-Network, A model-free algorithm, Q-Network learns by trial and error. 
