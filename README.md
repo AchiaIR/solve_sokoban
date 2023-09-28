@@ -3,7 +3,7 @@
 <img src="https://github.com/AchiaIR/solve_sokoban/blob/master/sokoban_7x7_1.gif" width="500" height="500" />
 </div>
 
-## Table of Contents
+## 🔴  Table of Contents
 
 - <a href="#about-the-project">About The Project</a>
 - <a href="#overview">Overview</a>
@@ -24,7 +24,7 @@
 <span> ───────────────────────────────────────────── </span>
 
 <a name="about-the-project"></a>
-<h2> $\color{red}{ About \ The \ Project }$ </h2>
+<h2> 🔴 About The Project </h2>
 
 This project is a showcase of how the Sokoban game, a difficult
 transportation puzzle where boxes are moved to storage locations, can be solved
@@ -36,7 +36,7 @@ Deep Q-Network means making use of deep neural network as "Q-table", the way the
 <span> ───────────────────────────────────────────── </span>
 
 <a name="overview"></a>
-<h2> $\color{red}{Overview }$ </h2>
+<h2> 🔴 Overview  </h2>
 
 Explain about the 2 parts of the project  - the Sokoban game, and the Deep Q-Network algorithm:
 * **Sokoban:** Sokoban (meaning 'warehouse keeper’) is a Japanese puzzle video game genre in which the 
@@ -64,10 +64,10 @@ using batches of experiences sampled from the replay buffer.
 <span> ───────────────────────────────────────────── </span>
 
 <a name="project-content-description"></a>
-<h2> $\color{red}{ Project \ Content \ Description }$ </h2>
+<h2> 🔴 Project Content Description </h2>
 
 <a name="python-content-description"></a>
-<h3> $\color{lime}{Python \ Content  \ Description}$ </h3>
+<h3> Python Content Description </h3>
 
 * **algorithms:** A folder contains the implementation of the RL algorithms, with a folder: 
     - model free 
@@ -80,7 +80,7 @@ using batches of experiences sampled from the replay buffer.
 * **setup.py:** the file to use in installation.
 
 <a name="other-supporting-content-description"></a>
-<h3>$\color{lime}{Other \ supporting \ Content \ Description}$</h3>
+<h3> Other supporting Content Description </h3>
 
 * **comfig.yaml:** A file that defines the configuration to use
 * **requirements.txt:** A file that defines the libraris to install for running the project
@@ -90,20 +90,20 @@ using batches of experiences sampled from the replay buffer.
 <span> ───────────────────────────────────────────── </span>
 
 <a name="getting-started"></a>
-<h2> $\color{red}{ Getting \ Started }$ </h2>
+<h2> 🔴 Getting Started </h2>
 
 <a name="prerequisites"></a>
-<h3>$\color{lime}{Prerequisites}$</h3>
+<h3> Prerequisites </h3>
 
 * pytghon 3.x installed on your machine
 * Pip (Python package installer)
 * A video tool installed (for example vlc) 
 
 <a name="installation"></a>
-<h3>$\color{lime}{Installation}$</h3>
+<h3> Installation </h3>
 
 <a name="windows"></a>
-* <h3>$\color{cyan}{Windows:}$</h3>
+* <h3> Windows: </h3>
 
 1. Clone this repository or download and extract the ZIP file:
 
@@ -126,7 +126,7 @@ using batches of experiences sampled from the replay buffer.
    `python setup.py install` 
 
 <a name="linux-and-mac"></a>   
-* <h3>$\color{cyan}{Linux \ and \ Mac:}$</h3>
+* <h3> Linux  and  Mac: </h3>
 
 1. Clone this repository or download and extract the ZIP file:
 
@@ -151,10 +151,10 @@ using batches of experiences sampled from the replay buffer.
    `python3 setup.py install`
 
 <a name="usage"></a>
-<h3>$\color{lime}{Usage}$</h3>
+<h3> Usage </h3>
 
 <a name="windows"></a>
-* <h3>$\color{cyan}{Windows:}$</h3>
+* <h3> Windows: </h3>
 
 Run the run.bat script:
 
@@ -165,7 +165,7 @@ you can play with the number of boxes:
 `run 2`
 
 <a name="linux-and-mac"></a>
-* <h3>$\color{cyan}{Linux \ and \ Mac:}$</h3>
+* <h3> Linux and Mac: </h3>
 
 1. Make the script executable (only need to do this once):
 
@@ -182,7 +182,7 @@ you can play with the number of boxes:
 <span> ───────────────────────────────────────────── </span>
 
 <a name="advanced-usage"></a>
-<h2>$\color{red}{Advanced \ Usage}$</h2>
+<h2> 🔴 Advanced Usage </h2>
 
 Since the algorithm is based on training a deep neural netowrk, running it with a random environement, where it creates a 
 new game structure each time, means it will have to train it from scratch in each run. This may take a long time on CPU. Therefor 
@@ -201,7 +201,7 @@ I also add here the google colab notebook for an easy exploration.
 <span> ───────────────────────────────────────────── </span>
 
 <a name="acknowledgments"></a>
-<h2>$\color{red}{Acknowledgments}$</h2>
+<h2> 🔴 Acknowledgments </h2>
 
 Based on a project in Reinforcement Learning course, Reichman University
 
